@@ -48,6 +48,7 @@ var ViewPager = React.createClass({
 
   getDefaultProps() {
     return {
+      style: {flex:1},
       isLoop: false,
       locked: false,
       animation: function(animate, toValue, gs) {
@@ -290,7 +291,7 @@ var ViewPager = React.createClass({
 
     var sceneContainerStyle = {
       width: viewWidth * pagesNum,
-      //flex: 1,
+      flex: 1,
       flexDirection: 'row'
     };
 
@@ -330,10 +331,6 @@ var ViewPager = React.createClass({
     );
   }
 });
-
-ViewPager.defaultProps = {
-  style: {flex:1},
-};
 
 var styles = StyleSheet.create({
   indicators: {
