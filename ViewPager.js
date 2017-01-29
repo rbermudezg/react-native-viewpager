@@ -291,7 +291,7 @@ var ViewPager = React.createClass({
 
     var sceneContainerStyle = {
       width: viewWidth * pagesNum,
-      flex: 1,
+      //flex: 1,
       flexDirection: 'row'
     };
 
