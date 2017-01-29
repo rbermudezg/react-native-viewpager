@@ -331,6 +331,10 @@ var ViewPager = React.createClass({
   }
 });
 
+ViewPager.defaultProps = {
+  style: {flex:1},
+};
+
 var styles = StyleSheet.create({
   indicators: {
     flex: 1,
