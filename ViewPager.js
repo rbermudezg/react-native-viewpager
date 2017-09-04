@@ -51,6 +51,7 @@ var ViewPager = React.createClass({
       style: {flex:1},
       isLoop: false,
       locked: false,
+      viewWidth: 0,
       animation: function(animate, toValue, gs) {
         return Animated.spring(animate,
           {
@@ -65,7 +66,7 @@ var ViewPager = React.createClass({
   getInitialState() {
     return {
       currentPage: 0,
-      viewWidth: 0,
+      viewWidth: this.props.viewWidth,
       scrollValue: new Animated.Value(0)
     };
   },
